@@ -1071,3 +1071,35 @@ form button {
     font-size: 2.45rem !important;
   }
 }
+/* FIX DEFINITIVO - TEXTO "VEN A COMPARTIR" */
+
+.event-block p.event-intro {
+  min-height: auto !important;
+  font-family: 'Parisienne', cursive !important;
+  font-size: clamp(3.1rem, 5.5vw, 4.3rem) !important;
+  line-height: 1.12 !important;
+  margin: 0 0 50px !important;
+  padding: 0 10px !important;
+  text-align: center !important;
+  font-weight: 400 !important;
+  letter-spacing: .5px !important;
+  color: white !important;
+  text-shadow: 2px 2px 3px rgba(0,0,0,.35) !important;
+}
+
+/* CELULAR */
+@media (max-width: 700px) {
+  .event-block p.event-intro {
+    font-size: 3.05rem !important;
+    line-height: 1.12 !important;
+    margin-bottom: 42px !important;
+    padding: 0 12px !important;
+  }
+}
+
+/* CELULAR PEQUEÑO */
+@media (max-width: 390px) {
+  .event-block p.event-intro {
+    font-size: 2.75rem !important;
+  }
+}
