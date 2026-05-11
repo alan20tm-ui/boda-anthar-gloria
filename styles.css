@@ -1022,3 +1022,52 @@ form button {
     font-size: 1rem;
   }
 }
+/* AJUSTE REAL FINAL - TEXTOS SCRIPT PRINCIPALES */
+
+.event-block .event-intro,
+.countdown-card .script-white,
+.photo-share-content h2 {
+  font-family: 'Parisienne', cursive !important;
+  font-size: clamp(2.8rem, 5vw, 4.1rem) !important;
+  line-height: 1.12 !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  color: white !important;
+  text-shadow: 2px 2px 3px rgba(0,0,0,.32) !important;
+}
+
+/* Quita el min-height que estaba afectando el texto de evento */
+.event-block .event-intro {
+  min-height: auto !important;
+  margin: 0 0 46px !important;
+}
+
+/* Para que “Nuestra Boda” no se dispare más grande */
+.photo-share-content h2 span {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+/* CELULAR */
+@media (max-width: 700px) {
+  .event-block .event-intro,
+  .countdown-card .script-white,
+  .photo-share-content h2 {
+    font-size: 2.75rem !important;
+    line-height: 1.12 !important;
+  }
+
+  .event-block .event-intro {
+    margin-bottom: 40px !important;
+    padding: 0 6px !important;
+  }
+}
+
+/* CELULAR CHICO */
+@media (max-width: 390px) {
+  .event-block .event-intro,
+  .countdown-card .script-white,
+  .photo-share-content h2 {
+    font-size: 2.45rem !important;
+  }
+}
